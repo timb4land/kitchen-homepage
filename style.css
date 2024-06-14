@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.box {
+  background: #226;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(252 22 22 / 50%),
+    rgba(124, 24, 255, 30%)
+  ), url(./img/lamb-potato-sauce-greenbeans.jpg);
+  background-size: 100%;
+  background-position-y: 53%;
+  background-position-x: 25%;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  color: #fff;
+  font-weight: bold;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #888;
+}
+  
+.headerlogo {
+  margin-left: 10em;
+  font-size: 2em;
+}
+  
+ul {
+  display: flex;
+  gap: 3em;
+  margin-right: 10em;
+  font-size: 1.5em;
+}
+  
+li {
+  color: #fff;
+  list-style: none;
+}
+  
+.tres {
+  display:flex;
+  gap: 1em;
+}
+  
+.first {
+  color: #fff;
+  display: flex;
+  gap: 1em;
+  max-width: 2200px;
+  min-width: 800px;
+  flex-wrap: wrap;
+  padding: 5em;
+  margin-left: 10em;
+}
+
+.first div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    border-radius: 1em;
+    width: auto;
+    height: 300px;
+}
+
+.second, 
+.third,
+.fourth,
+.fifth,
+.sixth,
+.seventh,
+.eighth,
+.nineth {
+  display: flex;
+  background: rgb(155,15,115,0.33);
+  border-radius: 8px;
+  align-items: center;
+  height: 250px;
+  width: 350px;
+  padding: 2.8em;
+  justify-content: center;
+  margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size; 20px;
+}
+
+.footer {
+    color: #fff;
+    font-size: 20px;
+    padding: 2em 0;
+    margin: auto 13em 0 15em;
+    border-top: 1px solid #555;
+    font-weight: bold;
+}
+
+
+
+.first p {
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+}
