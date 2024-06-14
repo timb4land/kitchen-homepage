@@ -1,27 +1,30 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    min-width: 1200px;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(252 22 22 / 50%),
+      rgba(124, 24, 255, 30%)
+    ), url(./img/currybutterchicken.jpg);
+    background-size: 100%;
+    background-position-y: 53%;
+    background-position-x: 25%;
+    color: #fff;
+    font-size: 0.8em;
 }
 
 *, ::after, ::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .box {
-  background: #226;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(252 22 22 / 50%),
-    rgba(124, 24, 255, 30%)
-  ), url(./img/lamb-potato-sauce-greenbeans.jpg);
-  background-size: 100%;
-  background-position-y: 53%;
-  background-position-x: 25%;
   padding: 0;
   margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .header {
@@ -32,17 +35,20 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #888;
+  position: fixed;
+  width: 100%;
 }
-  
+
+
 .headerlogo {
-  margin-left: 10em;
+  margin-left: 2em;
   font-size: 2em;
 }
   
 ul {
   display: flex;
   gap: 3em;
-  margin-right: 10em;
+  margin-right: 2em;
   font-size: 1.5em;
 }
   
@@ -55,28 +61,70 @@ li {
   display:flex;
   gap: 1em;
 }
+
+.welcome-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.welcome-text {
+  font-size: 2em;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(115,55,115,0.53);
+  height: 100%;
+  margin: 0;
+  border-radius: 0.25em;
+  margin: 4em 12em 7em;
+  padding:3%;
+  border: 2px solid darkmagenta;
+}
+
+.order {
+  padding: 1em 2em;
+  background: rgb(175,85,175,0.53);
+  color: #eee;
+  font-size: 0.75em;
+  font-weight: bold;
+  border-radius: 1em;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.order:hover {
+  cursor:pointer;
+}
+
+.menu {
+  font-size: 2em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: -3em;
+}
   
 .first {
   color: #fff;
   display: flex;
   gap: 1em;
-  max-width: 2200px;
-  min-width: 800px;
+  max-width: 100%;
   flex-wrap: wrap;
-  padding: 5em;
-  margin-left: 10em;
+  padding: 2em;
+  margin: 4em 4em;
 }
 
 .first div {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-
-img {
-    border-radius: 1em;
-    width: auto;
-    height: 300px;
 }
 
 .second, 
@@ -88,14 +136,24 @@ img {
 .eighth,
 .nineth {
   display: flex;
-  background: rgb(155,15,115,0.33);
+  background: rgb(115,55,115,0.53);
   border-radius: 8px;
   align-items: center;
   height: 250px;
-  width: 350px;
+  width: 400px;
   padding: 2.8em;
   justify-content: center;
   margin: 0;
+  flex: auto;
+}
+
+
+.nineth .servings {
+  font-size: 2.5em;
+}
+
+.first h1 {
+  color: orange;
 }
 
 a {
@@ -106,19 +164,62 @@ a {
 }
 
 .footer {
-    color: #fff;
-    font-size: 20px;
-    padding: 2em 0;
-    margin: auto 13em 0 15em;
-    border-top: 1px solid #555;
-    font-weight: bold;
+  color: #fff;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+  margin: auto 0 0;
+  border-top: 1px solid #555;
+  font-weight: bold;
+}
+
+.header,
+.footer {
+  background-color: rgb(52,22,52,0.8);
 }
 
 
-
 .first p {
-    font-size: 18px;
+    font-size: 1.5em;
     margin: 0;
     color: #fff;
     font-weight: bold;
+}
+
+.order-and-quote {
+  background: rgba(56, 27, 56, 0.63);
+  display: flex;
+  justify-content: space-between;
+  margin: 6em;
+}
+
+.orderbox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  flex: auto;
+  width: 100%;
+  font-size: 2em;
+}
+
+.quote {
+  font-size: 2em;
+  padding: 2em;
+  margin-top: 1em;
+}
+
+.quote h3 {
+  display: flex;
+  justify-content: center;
+  color: orange;
+  font-style: italic;
+  margin-left: 15em;
+}
+
+.strokeme {
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
