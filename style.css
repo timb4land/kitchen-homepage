@@ -167,11 +167,32 @@ a {
   color: #fff;
   font-size: 1.5em;
   display: flex;
-  justify-content: center;
-  padding: 2em 0;
-  margin: auto 0 0;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0
   border-top: 1px solid #555;
   font-weight: bold;
+  align-items: center;
+  gap: 15em;
+}
+
+.footercopy {
+  margin-left: 5em;
+  flex-grow: 0;
+}
+
+.footersets {
+  margin-right: auto;
+  flex-grow: 1;
+}
+
+.footer li {
+  font-size: 0.8em;
+}
+
+#location {
+  align-self: center;
+  margin-left: auto;
 }
 
 .header,
@@ -222,4 +243,8 @@ a {
   color: #eee;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#contact {
+  margin-left: auto;
 }

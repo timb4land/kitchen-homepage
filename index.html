@@ -12,20 +12,20 @@
       <div class="headerlogo">Timmenhoff's kitchen</div>
       <div class="tres">
         <ul>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Location</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#location">Location</a></li>
         </ul>
       </div>
     </div>
-    <div class="welcome-title"><p class="strokeme">Welcome to Timmenhoff's kitchen.</p></div>
+    <div class="welcome-title"><p class="strokeme">Welcome to Timmenhoff's kitchen!</p></div>
     <div class="welcome-text">
       <p>Timmenhoff's kitchen is open for you EVERY DAY at 16:00 - 18:00.</p> 
       <p>There is one delicious dish for each day.</p>
       <p>Scroll down and see the menu. Bon Appetit!</p>
     </div>
     </div>
-    <div class="menu"><h1 class="strokeme">THE MENU</h1></div>
+    <div class="menu" id="menu"><h1 class="strokeme">THE MENU</h1></div>
     <div class="first">
       <div class="second">
         <h1>Monday: Curry Butter Chicken</h1>
@@ -63,12 +63,12 @@
         <h1>12e</h1>
       </div>
       <div class="nineth">
-        <button class="order">Order now!</button>
+        <button class="order"><a href="#order-box">Order now!</a></button>
         <p class="servings">3 servings left!</p>
       </div>
     </div>
     <div class="order-and-quote">
-      <div class="orderbox">
+      <div class="orderbox" id="order-box">
         <h1>How to order</h1>
         <p>Send a text message on WhatsApp or SMS.
         <p style="color: orange; font-weight: bold;">number: 123-4567-890</p>
@@ -80,7 +80,20 @@
         <h3>Jokke</h3>
       </div>
     </div>
-    <div class="footer">&copy; 2024 timb4land. All rights reserved.</div>
+    <div class="footer">
+      <div class="footercopy">&copy; 2024 timb4land. All rights reserved.</div>
+      <div class="footersets">
+        <ul>
+          <li id="contact"><p>email@email.email</p>
+            <p>number: 123-4567-890</p>
+          </li>
+          <li id="location">
+            <p>address: Thisismyaddress 1 A 26</p>
+            <p>12345 City</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
 </html>
